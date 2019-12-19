@@ -6,20 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageviewBanner"
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageviewBanner"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:scaleType="fitXY"-->
+    <!--        tools:src="@mipmap/ic_launcher" />-->
+
+    <!--    <Button-->
+    <!--        android:layout_marginTop="100dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_below="@id/imageviewBanner"-->
+    <!--        android:text="Start"-->
+    <!--        android:id="@+id/buttonStartBanner"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content" />-->
+
+    <ViewFlipper
+        android:id="@+id/viewflpper"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="fitXY"
-        tools:src="@mipmap/ic_launcher" />
+        android:layout_height="200dp" />
 
     <Button
-        android:layout_marginTop="100dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/imageviewBanner"
-        android:text="Start"
         android:id="@+id/buttonStartBanner"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewflpper"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Start" />
 
 </RelativeLayout>
