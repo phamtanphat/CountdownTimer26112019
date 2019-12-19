@@ -55,10 +55,10 @@ public class MainActivity extends AppCompatActivity {
         mBtnStart = findViewById(R.id.buttonStartBanner);
         mViewFlipper = findViewById(R.id.viewflpper);
 
-        for (int i = 0 ; i < mArrayImages.length ; i++){
+        for (int value : mArrayImages){
             ImageView imageView = new ImageView(this);
             imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-            imageView.setImageResource(mArrayImages[i]);
+            imageView.setImageResource(value);
             mViewFlipper.addView(imageView);
         }
 
